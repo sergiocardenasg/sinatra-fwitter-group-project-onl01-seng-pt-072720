@@ -1,0 +1,10 @@
+<h2> Welcome, <%=@current_user.username%> </h2>
+
+<h3> Here are the latest tweets: </h3>
+<%@tweets.each do |tweet|%>
+    <%=tweet.content%> <br> <br>
+<%end%>
+
+<h2> Your Tweets: </h2>
+<h3> Click <a href="/yourtweets"> here </a> to see your tweets! <h3>
+<h3> Click <a href="/tweets/new"> here </a> to tweet something new! <h3>

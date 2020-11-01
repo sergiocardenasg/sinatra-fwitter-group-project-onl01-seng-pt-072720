@@ -1,0 +1,5 @@
+<h4> Here are your tweets: </h4>
+<%current_user.tweets.each_with_index do |tweet, index|%>
+    <%indexplusone = index + 1%>
+    <%=indexplusone%>. <%=tweet.content%>
+<%end%>
